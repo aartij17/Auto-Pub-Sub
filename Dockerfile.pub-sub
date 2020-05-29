@@ -1,0 +1,12 @@
+FROM alpine:3.3
+ARG basedir
+
+RUN mkdir /pub-sub/
+
+COPY /bin/pub-sub /pub-sub/
+
+WORKDIR /pub-sub
+
+EXPOSE 8080
+
+ENTRYPOINT [ "/pub-sub/run" ]

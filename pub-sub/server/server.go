@@ -8,7 +8,7 @@ import (
 var (
 	natsServer = "nats://localhost:4222"
 	// uncomment this when Dockerized
-	// natsServer = "nats://cloud-nats-svc:4222" 
+	// natsServer = "nats://cloud-nats-svc:4222"
 )
 
 func RunServer() {

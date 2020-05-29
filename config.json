@@ -1,0 +1,21 @@
+{
+  "applications": [
+    {
+      "application_name": "nats",
+      "dockerfile": "Dockerfile.nats",
+      "replica_count": 1,
+      "port": 4222
+    },
+    {
+      "application_name": "pub-sub",
+      "dockerfile": "Dockerfile.pub-sub",
+      "replica_count": 1,
+      "port": 30000
+    }
+  ],
+  "registry": {
+    "address": "aartij17/runtimeautodeploy",
+    "username": "aartij17",
+    "password": "aarti@123"
+  }
+}
