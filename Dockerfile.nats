@@ -25,6 +25,6 @@ RUN set -eux; \
 	\
 	apk del --no-cache --no-network buildtmp
 
-COPY nats-server.conf /etc/nats/nats-server.conf
+COPY build/nats-server.conf /etc/nats/nats-server.conf
 EXPOSE 4222 8222 6222
 CMD ["nats-server"]
