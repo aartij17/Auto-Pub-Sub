@@ -3,7 +3,7 @@ ARG basedir
 
 RUN mkdir /pub-sub/
 
-COPY /bin/pub-sub /pub-sub/
+COPY build/bin/pub-sub /pub-sub/
 
 WORKDIR /pub-sub
 
